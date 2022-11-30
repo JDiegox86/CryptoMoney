@@ -63,12 +63,20 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.currency_bitcoin),
-            label: 'Coins',
-          ),
+              icon: Icon(Icons.currency_bitcoin),
+              label: 'Coins',
+              backgroundColor: Colors.blueGrey),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite_outline),
             label: 'Following',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.supervised_user_circle_sharp),
+            label: 'User',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.precision_manufacturing_outlined),
+            label: 'Correción',
           )
         ],
         currentIndex: _selectedIndex,
